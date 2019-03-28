@@ -1,0 +1,11 @@
+{
+  "name": "dailypractice",
+  "version": "1.0.0",
+  "description": "daily practice problems from various sources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M",
+  "license": "ISC"
+}
