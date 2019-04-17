@@ -27,4 +27,20 @@ function caesarCipherEncryptorSoln1(string, key) {
   return newLetters.join("");
 }
 
+// Optimal Solution 2: here 'a' is at index 0 and 'z' is at index 25 in the alphabet array
+// O(n) Time | O(n) Space
+function caesarCipherEncryptorSoln2(string, key) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  const newLetters = [];
+  const newKey = key % 26;
+  for (const letter of string) {
+    const newLetterCode = alphabet.indexOf(letter) + newKey;
+    newLetterCode <= 25
+      ? newLetters.push(alphabet[newLetterCode])
+      : newLetters.push(alphabet[-1 + (newLetterCode % 25)]);
+  }
+  return newLetters.join("");
+}
+
 console.log(caesarCipherEncryptorSoln1("xyz", 2));
+console.log(caesarCipherEncryptorSoln2("xyz", 2));
