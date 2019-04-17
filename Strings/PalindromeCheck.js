@@ -47,11 +47,11 @@ function isPalindromeSoln3(string, i = 0) {
 they're equal, then move pointers to compare second and second-to-last chars, etc */
 // O(n) Time | O(1) Space
 function isPalindromeSoln4(string) {
-  const inputStr = string.toLowerCase();
+  const inputString = string.toLowerCase();
   let left = 0;
   let right = string.length - 1;
   while (left < right) {
-    if (inputStr[left] !== inputStr[right]) {
+    if (inputString[left] !== inputString[right]) {
       return false;
     } else {
       left++;
