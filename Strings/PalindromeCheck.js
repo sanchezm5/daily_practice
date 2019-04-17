@@ -27,7 +27,8 @@ function isPalindromeSoln2(string) {
   return reversed.join("").toLowerCase() === string.toLowerCase();
 }
 
-/* Solution 3: check if starting and ending chars are the same, then recursively check if chars between these make up a palindrome */
+/* Solution 3: check if starting and ending chars are the same, then recursively check if chars 
+between these make up a palindrome */
 // O(n) Time | O(n) Space
 function isPalindromeSoln3(string, i = 0) {
   const lowerCaseStr = string.toLowerCase();
@@ -42,7 +43,8 @@ function isPalindromeSoln3(string, i = 0) {
   }
 }
 
-/* Optimal Solution 4: use left and right pointers (for indices) to compare first and last chars, if they're equal, then move pointers to compare second and second-to-last chars, etc */
+/* Optimal Solution 4: use left and right pointers (for indices) to compare first and last chars, if 
+they're equal, then move pointers to compare second and second-to-last chars, etc */
 // O(n) Time | O(1) Space
 function isPalindromeSoln4(string) {
   const inputStr = string.toLowerCase();
