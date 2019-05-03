@@ -15,6 +15,8 @@ Output: true */
 
 //Solution 1: Use a Frequency Counter Pattern
 const validAnagram = function(s, t) {
+  if (s.length < t.length) return false;
+
   // create an object to collect the frequency of characters in s and t
   const sCounter = {};
   const tCounter = {};
@@ -44,3 +46,5 @@ const validAnagram = function(s, t) {
 console.log(validAnagram("@ana1ram", "@na1aram"));
 console.log(validAnagram("aaz", "zza"));
 console.log(validAnagram("qwerty", "qeywrt"));
+console.log(validAnagram("a", "ab"));
+console.log(validAnagram("bb", "b"));
