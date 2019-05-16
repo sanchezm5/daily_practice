@@ -65,5 +65,5 @@ function getLongestPalindromeFrom(string, left, right) {
   return [left + 1, right];
 }
 
-console.log(longestPalindromicSubstringSoln1(abaxyzzyxf));
-console.log(longestPalindromicSubstringSoln2(abaxyzzyxf));
+console.log(longestPalindromicSubstringSoln1("abaxyzzyxf"));
+console.log(longestPalindromicSubstringSoln2("abaxyzzyxf"));
