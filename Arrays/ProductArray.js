@@ -40,4 +40,28 @@ function productArray(arr) {
   return arr;
 }
 
+/* Optimal Solution 2: Create a Left(L) and Right(R) Array, where for i, (L) contains the 
+product of all numbers to left of i and to the right for (R) */
+//Time O(n) | Space O(n)
+function productExceptSelf(nums) {
+  let left = new Array(nums.length).fill(1);
+  let right = new Array(nums.length).fill(1);
+  let result = [];
+  let leftProd = 1;
+  let rightProd = 1;
+
+  for (let i = 1; i < nums.length; i++) {
+    leftProd *= nums[i - 1];
+    left[i] = leftProd;
+    rightProd *= nums[nums.length - i];
+    right[nums.length - i - 1] = rightProd;
+  }
+
+  for (let i = 0; i < nums.length; i++) {
+    result.push(left[i] * right[i]);
+  }
+  return result;
+}
+
 console.log(productArray([1, 2, 3, 4]));
+console.log(productExceptSelf([1, 2, 3, 4]));
