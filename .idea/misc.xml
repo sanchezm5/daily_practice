@@ -6,5 +6,10 @@
         <option value="$PROJECT_DIR$/LinkedLists/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/TestPush/pom.xml" />
+      </set>
+    </option>
   </component>
 </project>
