@@ -8,3 +8,4 @@ node_modules
 *.ipr
 /JavaPractice/JavaPractice.iml
 /.idea/
+/JavaPractice/target/
