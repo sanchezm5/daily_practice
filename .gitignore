@@ -1,2 +1,10 @@
 .DS_Store
 node_modules
+
+### IntelliJ IDEA ### 
+.idea 
+*.iws
+ *.iml 
+*.ipr
+/JavaPractice/JavaPractice.iml
+/.idea/
