@@ -28,4 +28,14 @@ public class MaximumSubArray {
         }
         return sum;
     }
+
+    public static void main(String[] args) {
+        // MaxSubArray
+        int[] maxTest1 = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] maxTest2 = {-2,-1};
+        System.out.println("The largest sum of [-2,1,-3,4,-1,2,1,-5,4] is = " + maxSubArray(maxTest1));
+        System.out.println("The largest sum of [-2,-1] is = " + maxSubArray(maxTest2));
+        System.out.println("\n---------------------------------------\n");
+    }
+
 }
