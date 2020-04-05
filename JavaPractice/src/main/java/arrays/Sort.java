@@ -13,7 +13,7 @@ package arrays;
 public class Sort {
 
     // Solution 1: Use multiple pointers and copy values into a new array
-    public static int[] sortSoln1(int[] a) {
+    static int[] sortSoln1(int[] a) {
         // initialize j = 0 and a new array to hold the sorted integers without consecutive duplicates
         int j = 0;
         int[] newArr = new int[a.length];
@@ -44,7 +44,7 @@ public class Sort {
 
 
     // Solution 2: Use multiple pointers and sort array in-place
-    public static int[] sortSoln2(int[] a) {
+    static int[] sortSoln2(int[] a) {
         // initialize j = 0
         int j = 0;
 
@@ -71,5 +71,27 @@ public class Sort {
         }
         // return the final array with the correct size
         return finalArr;
+    }
+
+    public static void main(String[] args) {
+        // SortSoln1
+        int[] a = {1,1,2,2,3,4,4,5};
+        int[] ansSoln1 = sortSoln1(a);
+        System.out.print("sortSoln1 = ");
+        for (int i = 0; i < ansSoln1.length; i++) {
+            // should output 1,2,3,4,5
+            System.out.print(ansSoln1[i] + " ");
+        }
+        System.out.println("\n---------------------------------------\n");
+
+        // SortSoln2
+        int[] b = {1,1,2,2,3};
+        int[] ansSoln2 = sortSoln2(b);
+        System.out.print("sortSoln2 = ");
+        for (int i = 0; i < ansSoln2.length; i++) {
+            // should output 1,2,3
+            System.out.print(ansSoln2[i] + " ");
+        }
+        System.out.println("\n---------------------------------------\n");
     }
 }
