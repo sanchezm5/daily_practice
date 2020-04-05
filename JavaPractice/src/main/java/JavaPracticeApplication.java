@@ -1,3 +1,4 @@
+import arrays.MaximumSubArray;
 import arrays.Sort;
 
 public class JavaPracticeApplication {
@@ -21,6 +22,13 @@ public class JavaPracticeApplication {
             // should output 1,2,3
             System.out.print(ansSoln2[i] + " ");
         }
+        System.out.println("\n---------------------------------------\n");
+
+        // MaxSubArray
+        int[] maxTest1 = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] maxTest2 = {-2,-1};
+        System.out.println(MaximumSubArray.maxSubArray(maxTest1));
+        System.out.println(MaximumSubArray.maxSubArray(maxTest2));
         System.out.println("\n---------------------------------------\n");
     }
 }
