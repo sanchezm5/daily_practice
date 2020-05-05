@@ -24,7 +24,7 @@ import java.util.Stack;
 // Time: O(n) | Space: O(1)
 public class ValidParenthesisString {
 
-    public boolean checkValidString(String s) {
+    public static boolean checkValidString(String s) {
 
         // create two stacks, one to hold the index for '(' and the other will be used to store the index of '*'
         Stack<Integer> stack1 = new Stack<Integer>();
@@ -66,5 +66,12 @@ public class ValidParenthesisString {
             return false;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "(*))";
+        String s2 = ")(*";
+        System.out.println(checkValidString(s1)); // Output should be true
+        System.out.println(checkValidString(s2)); // Output should be false
     }
 }
