@@ -13,6 +13,7 @@
 
 package numbers;
 
+// Time: O(2^n) | Space: O(1)
 public class FibonacciNumber {
 
     public static int fib(int n) {
