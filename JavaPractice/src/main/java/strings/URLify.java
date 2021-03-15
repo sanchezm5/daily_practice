@@ -14,7 +14,9 @@ package strings;
 
 public class URLify {
 
-    public static String urlifyString(String string, int length) {
+    // Use a character array and work backwards to fill the spaces with either the given or replacement characters
+    // Then convert the character array into a string using the String.valueOf(array) method
+    public static String urlifyStringSoln1(String string, int length) {
         char[] arrayOfChars = string.toCharArray();
         int index = length - 1;
 
@@ -32,7 +34,22 @@ public class URLify {
         return String.valueOf(arrayOfChars);
     }
 
+    // Use a StringBuilder to create the final string, replacing the spaces with '%20'
+    public static String urlifyStringSoln2(String string, int length) {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            if (string.charAt(i) == ' '){
+                sb.append("%20");
+            } else {
+                sb.append(string.charAt(i));
+            }
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
-        System.out.println(urlifyString("Mr John Smith    ", 13));
+        System.out.println(urlifyStringSoln1("Mr John Smith    ", 13));
+        System.out.println(urlifyStringSoln2("Mr John Smith    ", 13));
     }
 }
