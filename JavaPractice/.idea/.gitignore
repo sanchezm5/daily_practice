@@ -9,7 +9,7 @@
 /modules.xml
 /vcs.xml
 ../target
-libraries
+/libraries
 ../.idea
 /uiDesigner.xml
 /JavaPractice/.idea/
