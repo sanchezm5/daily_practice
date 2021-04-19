@@ -1,4 +1,5 @@
 # Default ignored files
+
 /shelf/
 /workspace.xml
 /codeStyles
@@ -8,5 +9,7 @@
 /modules.xml
 /vcs.xml
 ../target
+libraries
 ../.idea
 /uiDesigner.xml
+/JavaPractice/.idea/
