@@ -8,7 +8,7 @@
  *  Finally, make sure to add getters and setters to your class.
  */
 
-package entitiesExercise;
+package entitiesExercise1;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

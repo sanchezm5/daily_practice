@@ -6,7 +6,7 @@
  *  the class.
  */
 
-package entitiesExercise;
+package entitiesExercise1;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
