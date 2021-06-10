@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 @Entity
 @Getter @Setter @NoArgsConstructor
 @Inheritance(strategy = InheritanceType.JOINED) // stores shared fields in 'plant' table and unique fields in subclass tables
-public abstract class Plant {
+public class Plant {
 
     @Id
     @GeneratedValue
